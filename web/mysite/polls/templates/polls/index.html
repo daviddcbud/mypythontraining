@@ -1,0 +1,14 @@
+{% if error_message %}
+<strong>{{ error_message }}</strong>
+{% endif %}
+
+{% if polls %}
+  <ul>
+  {% for poll in polls %}
+    <li><a href="{% url 'detail' poll.id %}" >{{ poll.question }}</a></li>
+  {% endfor %}
+
+  </ul>
+
+{% endif %}
+
