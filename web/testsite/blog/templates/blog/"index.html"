@@ -1,0 +1,3 @@
+{% for x in list %}
+  <li><a href="{% url 'detail' x.id %}">x.id</a></li>
+{% endfor %}

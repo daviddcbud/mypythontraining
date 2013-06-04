@@ -1,0 +1,3 @@
+{% for x in data %}
+  <li><a href="{% url 'blog:detail' x.id %}">{{ x.id }}</a></li>
+{% endfor %}

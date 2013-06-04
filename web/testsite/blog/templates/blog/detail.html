@@ -1,0 +1,12 @@
+
+<h1>{{ data.blog.title }} </h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+
+
+<form action="{% url 'blog:update' data.id %}" method="post">
+{% csrf_token %}
+<textarea id="text" name="text">{{ data.text }}</textarea>
+<input type="submit" value="Save"/>
+</form>
