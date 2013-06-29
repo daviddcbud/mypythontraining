@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html ng-app>
+<head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" media="screen"/>
+    <link rel="stylesheet" media="screen" href="bootstrap/css/bootstrap.responsive.min.css"/>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="js.js"></script>
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Page Title</title>
+</head>
+
+<body ng-controller="PhoneCtrl">
+
+<div class="container-fluid">
+    <div class="row-fluid">
+	<span class="span3">
+          Nothing here {{message}}</span>
+
+
+      <span class="span3">{{message}}</span>
+    </div>
+   <div class="row-fluid">   
+      <button class="span2" ng-click="changeme()">test</button>
+
+    <span class="span2" ng-repeat="name in names">{{name}}<br/></span>
+  </div>
+</div>  
+<span class="icon-search"></span>
+</body>
+</html>
